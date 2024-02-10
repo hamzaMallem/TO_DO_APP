@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(149, 90, 205);
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container{
+    margin-top: 50px;
+    height: 80vh;
+    width: 80%;
+}
+.header {
+    padding: 20px;
+    background-color: rgb(53, 83, 139);
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header h2{
+    display: inline;
+    color: white;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: center;
+}
+.header span{
+    margin-right: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bolder;
+    right: 0;
+}
+.cercle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.2;
+    cursor: pointer;  
+    transition: 0.3s;
+}
+.cercle:hover{
+    box-shadow: 0px 2px 11px rgba(61, 61, 61, 0.442);
+}
+.tasks{
+    padding: 10px;
+    background-color: #c0d5d7;
+}
+.task{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.task.done{
+    background-color: rgb(134 205 134);
+}
+.task:hover{
+    box-shadow: 0px 2px 11px rgba(61, 61, 61, 0.442);
+}
+.task .task-info {
+    width: 70%;
+}
+.task .task-action{
+    width: 30%;
+}
+.task-action span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+span.red{
+    background-color: rgb(254, 114, 114);
+}
+span.blue{
+    background-color: rgb(118, 118, 249);
+}
+span.green{
+    background-color: rgb(82, 191, 122);
+}
